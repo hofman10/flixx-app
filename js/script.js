@@ -77,6 +77,9 @@ const displayMovieDetails = async function () {
   const movie = await fetchAPIData(`movie/${movieId}`);
   console.log(movie);
 
+  //Overlay for background image
+  displayBackgroundImage("movie", movie.backdrop_path);
+
   const div = document.createElement("div");
   div.innerHTML = `
     <div class="details-top">
@@ -134,7 +137,11 @@ const displayMovieDetails = async function () {
   document.querySelector("#movie-details").appendChild(div);
 };
 
+<<<<<<< HEAD
+// Display Backdrop On Details Pages
+=======
 // Display backdrop on details pages
+>>>>>>> main
 function displayBackgroundImage(type, backgroundPath) {
   const overlayDiv = document.createElement("div");
   overlayDiv.style.backgroundImage = `url(https://image.tmdb.org/t/p/original/${backgroundPath})`;
