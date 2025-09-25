@@ -1,5 +1,7 @@
 // apiKljuc = "f1dc3deee62bb7bf44211b2c5742952a";
 
+//DODATA IZMJENA NA FEATURE GRANI
+
 const global = {
   currentPage: window.location.pathname,
 };
