@@ -1,2 +1,2 @@
-// samo glup komentar
+// sSmo g=Glup Komentar
 // drugi glupi komenar
