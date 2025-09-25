@@ -1,1 +1,1 @@
-// samo glup komentar
+// sSmo g=Glup Komentar
