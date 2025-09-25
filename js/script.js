@@ -1,5 +1,6 @@
 // apiKljuc = "f1dc3deee62bb7bf44211b2c5742952a";
 
+// dodat novi najnoviji kometar task 2=3
 const global = {
   currentPage: window.location.pathname,
 };
