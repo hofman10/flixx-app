@@ -137,7 +137,11 @@ const displayMovieDetails = async function () {
   document.querySelector("#movie-details").appendChild(div);
 };
 
+<<<<<<< HEAD
 // Display Backdrop On Details Pages
+=======
+// Display backdrop on details pages
+>>>>>>> main
 function displayBackgroundImage(type, backgroundPath) {
   const overlayDiv = document.createElement("div");
   overlayDiv.style.backgroundImage = `url(https://image.tmdb.org/t/p/original/${backgroundPath})`;
