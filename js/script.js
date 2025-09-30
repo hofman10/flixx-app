@@ -71,7 +71,7 @@ const displayPopularShows = async function () {
            }
           </a>
           <div class="card-body">
-            <h5 class="card-title">${show.title}</h5>
+            <h5 class="card-title">${show.name}</h5>
             <p class="card-text">
               <small class="text-muted">Air Date: ${show.first_air_date}</small>
             </p>
