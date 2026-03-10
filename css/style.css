@@ -11,6 +11,11 @@
   --color-secondary: #f1c40f;
 }
 
+/* Smooth scrolling for better UX */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -238,7 +243,18 @@ section h2 {
   margin-top: 20px;
 }
 
-.details-bottom {
+/* Backdrop Overlay for Detail Pages */
+.backdrop-overlay {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.2;
 }
 
 .details-bottom li {

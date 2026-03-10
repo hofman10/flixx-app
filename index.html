@@ -1,22 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover popular movies and TV shows. Browse, search, and explore detailed information about your favorite entertainment."
+    />
+
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="Flixx - Discover Movies & TV Shows" />
+    <meta
+      property="og:description"
+      content="Browse popular movies and TV shows with detailed information, ratings, and more."
+    />
+    <meta property="og:type" content="website" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="lib/swiper.css" />
-    <link rel="stylesheet" href="lib/fontawesome.css" />
+    <link rel="stylesheet" href="vendor/swiper.css" />
+    <link rel="stylesheet" href="vendor/fontawesome.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/spinner.css" />
-    <script src="lib/swiper.js"></script>
-    <script src="js/script.js" defer></script>
-    <title>Flixx</title>
+    <script src="vendor/swiper.js"></script>
+    <script src="js/app.js" type="module" defer></script>
+    <title>Flixx - Discover Movies & TV Shows</title>
   </head>
   <body>
     <header class="main-header">
@@ -51,9 +64,9 @@
           <!-- movies and shows radio box -->
           <div class="search-radio">
             <input type="radio" id="movie" name="type" value="movie" checked />
-            <label for="movies">Movies</label>
+            <label for="movie">Movies</label>
             <input type="radio" id="tv" name="type" value="tv" />
-            <label for="shows">TV Shows</label>
+            <label for="tv">TV Shows</label>
           </div>
           <div class="search-flex">
             <input
@@ -62,7 +75,7 @@
               id="search-term"
               placeholder="Enter search term"
             />
-            <button class="btn" type="submit">
+            <button class="btn" type="submit" aria-label="Search">
               <i class="fas fa-search"></i>
             </button>
           </div>
@@ -81,15 +94,30 @@
       <div class="container">
         <div class="logo"><span>FLIXX</span></div>
         <div class="social-links">
-          <a href="https://www.facebook.com" target="_blank"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-          <a href="https://www.twitter.com" target="_blank"
-            ><i class="fab fa-twitter"></i
-          ></a>
-          <a href="https://www.instagram.com" target="_blank"
-            ><i class="fab fa-instagram"></i
-          ></a>
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://www.twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
         </div>
       </div>
     </footer>
