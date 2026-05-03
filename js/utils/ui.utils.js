@@ -29,7 +29,18 @@ export const showAlert = (message, className = "error") => {
 export const highlightActiveLink = (currentPage) => {
   const links = document.querySelectorAll(DOM_SELECTORS.navLink);
   links.forEach((link) => {
-    if (link.getAttribute("href") === currentPage) {
+    const href = link.getAttribute("href");
+    // Normalize both paths for comparison (remove trailing slash and .html)
+    const normalizedHref = href
+      .replace(/\/(index\.html)?$/, "/")
+      .replace(/\.html$/, "");
+    const normalizedPage =
+      currentPage
+        .replace(/\/(index\.html)?$/, "/")
+        .replace(/\.html$/, "")
+        .replace(/\/$/, "") || "/";
+
+    if (normalizedHref === normalizedPage || href === currentPage) {
       link.classList.add("active");
     }
   });
