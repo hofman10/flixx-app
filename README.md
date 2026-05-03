@@ -2,6 +2,10 @@
 
 A modern, responsive web application for discovering popular movies and TV shows using The Movie Database (TMDB) API. Built with vanilla JavaScript demonstrating clean architecture, modular code organization, and best practices for frontend development.
 
+## 🌐 Live Demo
+
+**[View Live Demo](https://flixx-movie-search.netlify.app/)**
+
 ## ✨ Features
 
 - 🎥 **Browse Popular Content** - View trending movies and TV shows
