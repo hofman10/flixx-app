@@ -25,19 +25,27 @@ const initApp = () => {
       displayPopularMovies();
       break;
 
+    case "/shows":
     case "/shows.html":
+    case "/shows/":
       displayPopularShows();
       break;
 
+    case "/movie-details":
     case "/movie-details.html":
+    case "/movie-details/":
       displayMovieDetails();
       break;
 
+    case "/tv-details":
     case "/tv-details.html":
+    case "/tv-details/":
       displayShowDetails();
       break;
 
+    case "/search":
     case "/search.html":
+    case "/search/":
       performSearch();
       break;
 
